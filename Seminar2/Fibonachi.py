@@ -5,14 +5,26 @@
 # Input: 5
 # Output: 6
 
-number = input()
+number = int(input('Введите число: '))
 number1 = 1
 number2 = 1
 
-index = 2
 for i in range (0, number):
-    number_sum = number1 + number2
-    number1 = number2
-    number2 = number_sum
-    if number2 == number:
-        print()
+    if number < 0:
+        print(-1)
+    elif number == 0:
+        print(1)
+    elif number == 1:
+        print(1, 2)
+    else:
+        number_sum = number1 + number2
+        number1 = number2
+        number2 = number_sum
+        if number == number2:
+            print(i + 4)
+            print(number)
+            break
+        elif number < number2:
+            print(-1)
+            break
+
