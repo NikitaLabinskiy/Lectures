@@ -22,7 +22,7 @@ count = 0
 result = 0
 
 for i in range(number):
-    hot_day = int(input())
+    hot_day = int(input('Введите температуру дня: '))
     if hot_day >= 0:
         count += 1
     else:
@@ -33,6 +33,6 @@ for i in range(number):
             count = 0
 if count > result:
     result = count
-    print(f'Самая длинная оттепель = {result} дня/дней')
+    print(f'\nСамая длинная оттепель = {result} дня/дней\n')
 else:
-    print(f'Самая длинная оттепель = {result} дня/дней')
+    print(f'\nСамая длинная оттепель = {result} дня/дней\n')
